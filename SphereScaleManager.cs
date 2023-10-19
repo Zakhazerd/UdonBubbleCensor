@@ -12,7 +12,7 @@ public class SphereScaleManager : UdonSharpBehaviour
     private int sphereIndex;
     public GameObject[] sphereArray;
     [UdonSynced]
-    private Vector3[] syncedScale = new Vector3[30]; 
+    public Vector3[] syncedScale = new Vector3[30]; 
     public Slider scaleSlider;
     public Transform sphereOrginalScale;
     private void Start()
@@ -44,7 +44,6 @@ public class SphereScaleManager : UdonSharpBehaviour
     }
 
   
-    
     public void IndexLeft()
     {
         sphereIndex--;

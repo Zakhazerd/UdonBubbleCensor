@@ -19,7 +19,6 @@ public class LaserPointerRayCaster : UdonSharpBehaviour
     private void Update()//should i used fixedupdate? that is called befoer input events but im not sure how the behavior changes from update
     {
 
-        Debug.Log("Update is called");
         Ray laserRay = new Ray(lineTransform.position, lineTransform.forward);
         RaycastHit colliderInfo;
         palleteLine.SetPosition(0, lineTransform.position);
@@ -45,5 +44,6 @@ public class LaserPointerRayCaster : UdonSharpBehaviour
         }
 
     }
+    
 }
 
